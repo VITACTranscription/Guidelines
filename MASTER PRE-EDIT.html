@@ -1,0 +1,2870 @@
+<?xml version='1.0' encoding='ASCII'?>
+<html lang="en">
+  <head>
+    <title>MASTER Pre-Edit Guidelines</title>
+    <link rel="Stylesheet" href="bstrap.min.css"/>
+    <link rel="Stylesheet" href="take1.css"/>
+    <link rel="Stylesheet" href="jquery.scrollbar.css"/>
+    <script src="solid.js"> </script>
+    <script src="fontawesome.js"> </script>
+    <script src="take1.js"> </script>
+    <script src="jquery.js"></script>
+    <script src="popper.min.js"> </script>
+    <script src="bstrap.min.js"> </script>
+    <script src="jquery.scrollbar.js"> </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <h3>Vitac Job Specs</h3>
+        </div>
+        <ul class="list-unstyled sidenavbuttons">
+          <li>
+            <a class="btn btn-info" data-toggle="modal" data-target="#tipsModal">Job Spec Tips</a>
+          </li>
+          <li>
+            <a onclick="toggleCollapse();" id="collapseall" class="btn btn-warning">Expand tabs</a>
+          </li>
+          <li>
+            <a onclick="toggleImportantVisibility();" class="collapsebutton">
+              <span class="warn-icon">&#160;!&#160;</span>
+              <span id="toggleimportant">Only show important</span>
+            </a>
+          </li>
+        </ul>
+        <div class="sidebar-header">
+          <h5>Sections:</h5>
+        </div>
+        <ul class="list-unstyled sidenavbuttons">
+          <li>
+            <a class="navbutton" onClick="window.location.href='#tab-Media'; setMenuButtons(this);">Media</a>
+          </li>
+          <li>
+            <a class="navbutton" onClick="window.location.href='#tab-Timecode'; setMenuButtons(this);">Timecode</a>
+          </li>
+          <li>
+            <a class="navbutton" onClick="window.location.href='#tab-Audio'; setMenuButtons(this);">Audio</a>
+          </li>
+          <li>
+            <a class="navbutton" onClick="window.location.href='#tab-Visual'; setMenuButtons(this);">Visual</a>
+          </li>
+          <li>
+            <a class="navbutton" onClick="window.location.href='#tab-Grammar&amp;Punctuation'; setMenuButtons(this);">Grammar &amp; Punctuation</a>
+          </li>
+          <li>
+            <a class="navbutton" onClick="window.location.href='#tab-SupportMaterial'; setMenuButtons(this);">Support Material</a>
+          </li>
+        </ul>
+        <div class="sidebar-header">
+          <h5>Key:</h5>
+        </div>
+        <ul class="navbar-key">
+          <li>
+            <p class="dangerkey">Important</p>
+          </li>
+          <li>
+            <p class="noticekey">Content Label</p>
+          </li>
+          <li>
+            <p class="stylekey">Style Guide</p>
+          </li>
+          <li>
+            <p class="markerkey">Marker</p>
+          </li>
+          <li>
+            <p class="metakey">Meta Highlighter</p>
+          </li>
+          <li>
+            <p class="troublekey">Troubleshooting</p>
+          </li>
+        </ul>
+      </nav>
+      <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="modal-tips" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal-tips">Job Specs Tips</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&#215;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h5>Search function:</h5>
+              <p>Expand all tabs and then use CTRL + F to find all instances of the word or phrase you want to search for.</p>
+              <h5>Important job specs:</h5>
+              <p>These must be read for every job. Clients can change these requirements from job-to-job, so they must be read for each job. If you only want to review the job specs marked as important, you can click the 'only show important' button to only show a list of important instructions.</p>
+              <h5>Job spec sections:</h5>
+              <p>These sections group the job specs into logical blocks. For example, if you see something on-screen, then you will likely need to look at the Visual section. If you hear something, you will likely need to look at the Audio section.</p>
+              <h5>Key:</h5>
+              <p>The key informs you what the different colours mean. For example, green instructions are style guides that inform you how to type something.</p>
+              <h5>Something not here?</h5>
+              <p>The Job Specs communicate the requirements of the client for this particular job. If you need to find out how the software works, it will likely be in the software's manual. If you have a question related to working for Vitac in general, then it is probably in the general working practices document.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
+          <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-light">
+              <i class="fas fa-align-left"> </i>
+              <span>Toggle Sidebar</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <h2 class="nav navbar-nav nav-item active ml-auto text-white">
+                <span>Guidelines for:&#160;</span>
+                <span class="badge badge-light">PRE-EDIT TRANSCRIPTION</span>
+              </h2>
+            </div>
+          </div>
+        </nav>
+		<div class="main-content">
+          <div id="tab-Important" style="padding-bottom: 40px;">
+            <h3 class="cathead">Important</h3>
+            <p>These instructions are likely to vary from job to job, so please read them carefully to ensure you are capturing the correct content in your script.</p>
+            <div class="catcards">
+              <div class="card" id="si-Media-TranscribeWholeRecording" primarysort="1" secondarysort="Style_Guide">
+                <h5 class="alert alert-danger">
+                  <a data-toggle="collapse" data-target="#si-TranscribeWholeRecording" href="javascript:void(0);">
+                    <span class="warn-icon">&#160;!&#160;</span>
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span class="badge role-icon badge-danger" style="margin-right:10px;">Important!</span>
+                    <span>Watch entire media file</span>
+                  </a>
+                </h5>
+                <div id="si-TranscribeWholeRecording" class="card-body card-important collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>The entire media file should be watched, transcribing content according to the job instructions. If you have been given sections of the media file to transcribe, only watch these sections.</td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+			  <div class="card" id="si-Timecode-JumpingTimecode" primarysort="1" secondarysort="Style_Guide">
+                <h5 class="alert alert-danger">
+                  <a data-toggle="collapse" data-target="#si-JumpingTimecode" href="javascript:void(0);">
+                    <span class="warn-icon">&#160;!&#160;</span>
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span class="badge role-icon badge-danger" style="margin-right:10px;">Important!</span>
+                    <span>Jumping Timecodes</span>
+                  </a>
+                </h5>
+                <div id="si-JumpingTimecode" class="card-body card-important collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>This media file will likely contain jumping timecodes. Timecode calibration must be checked regularly, recalibrating where necessary.</p>
+                          <p><strong>What are jumping timecodes? </strong> Jumping Timecodes are when the BITC on the media file suddenly jumps forward in time, causing the video's calibration to go out of sync. It is sometimes called 'time of day timecode'. This is because the timecode being used represents the actual time of day that the footage was filmed. Timecode jumps occur when the camera is turned off, and then turned on again later in the day. When the camera is turned off and on, the timecode will 'jump' forward.</p>
+                          <p>
+                            <strong>
+                              <font color="red">You must recalibrate your timecode every time the timecode jumps.</font>
+                            </strong>
+                          </p>
+                          <p><strong>Does the media file have jumping timecodes?</strong> It is important that the timecodes in the transcript always match the BITC on the media file. The best time to check if a file has jumping timecodes is when a job is started. After calibrating a media file, scroll the media player to the end of the file to check that the timecode is still in sync with the BITC. If it isn't, then the file likely has jumping or drifting timecode, and therefore will require recalibration at least once whilst transcribing the media file. Please recalibrate if you go back to earlier sections in the media file. Here's how to tell the difference between <strong>jumping</strong> timecode and <strong>drifting</strong> timecode:</p>
+                          <ul>
+                            <li>If the timecode is drifting out of sync one frame at a time, then the media file has <strong>drifting</strong> timecode.</li>
+                            <li>If the timecode jumps out of sync by more than a frame, then it is likely <strong>jumping</strong> timecode. Whilst transcribing the media file, look out for any camera shot changes, or any jumps in the sound; these will indicate that the camera has been turned off and on (which is where the timecode will jump). This will need to be done throughout the file as there may be multiple jumps.</li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Timecode-TCFrequency" primarysort="1" secondarysort="Style_Guide">
+                <h5 class="alert alert-danger">
+                  <a data-toggle="collapse" data-target="#si-TCFrequency" href="javascript:void(0);">
+                    <span class="warn-icon">&#160;!&#160;</span>
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span class="badge role-icon badge-danger" style="margin-right:10px;">CHECK IN PLATFORM</span>
+                    <span>Timecode frequency</span>
+                  </a>
+                </h5>
+                <div id="si-TCFrequency" class="card-body card-important collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>Please check the job instructions in the platform for instructions on the required timecode frequency for all audio dialogue.</td>
+                      </tr>
+                    </table>
+                  </p>
+                  
+                </div>
+              </div>
+			  <div class="card" id="si-Audio-StyleInstructions" primarysort="1" secondarysort="Style_Guide">
+                <h5 class="alert alert-danger">
+                  <a data-toggle="collapse" data-target="#si-StyleInstructions" href="javascript:void(0);">
+                    <span class="warn-icon">&#160;!&#160;</span>
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span class="badge role-icon badge-danger" style="margin-right:10px;">CHECK IN PLATFORM</span>
+                    <span>Transcription style</span>
+                  </a>
+                </h5>
+                <div id="si-StyleInstructions" class="card-body card-important collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>Please check the job instructions in the platform for instructions on how to capture audio dialogue for these events:</p>
+                          <ul>
+                            <li>Ums and uhs</li>
+							<li>False starts</li>
+                            <li>Repetitions</li>
+                            <li>Stammers</li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Questions" primarysort="1" secondarysort="Style_Guide">
+                <h5 class="alert alert-danger">
+                  <a data-toggle="collapse" data-target="#si-Questions" href="javascript:void(0);">
+                    <span class="warn-icon">&#160;!&#160;</span>
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span class="badge role-icon badge-danger" style="margin-right:10px;">CHECK IN PLATFORM</span>
+                    <span>Interviewer questions</span>
+                  </a>
+                </h5>
+                <div id="si-Questions" class="card-body card-important collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>Please check the job instructions in the platform for instructions on how to capture interviewer questions.</td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+			  <div class="card" id="si-Grammar&amp;Punctuation-Dictionary" primarysort="1" secondarysort="Style_Guide">
+                <h5 class="alert alert-danger">
+                  <a data-toggle="collapse" data-target="#si-Dictionary" href="javascript:void(0);">
+                    <span class="warn-icon">&#160;!&#160;</span>
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span class="badge role-icon badge-danger" style="margin-right:10px;">CHECK IN PLATFORM</span>
+                    <span>Required dictionary</span>
+                  </a>
+                </h5>
+                <div id="si-Dictionary" class="card-body card-important collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>Please check the job instructions in the platform for instructions on the dictionary you are required to use for this job.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+              </div>
+            </div>
+          </div>
+        <div class="main-content">
+          <div id="tab-Media" style="padding-bottom: 40px;">
+            <h3 class="cathead">Media</h3>
+            <p>Any job specs that relate specifically to the media file are found in this section.</p>
+            <div class="catcards">
+              
+              <div class="card" id="si-Media-Nothingtotranscribe?" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Nothingtotranscribe" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Nothing to transcribe?</span>
+                  </a>
+                </h5>
+                <div id="si-Nothingtotranscribe" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>Sometimes a media file will not contain any relevant material that requires transcribing. </p>
+                          <p>Find the solution that best fits the media file currently being worked on:</p>
+                          <ul>
+                            <li>If there is no sound on the file, but the media file looks like it <em>should</em> have sound, contact Vitac to  report the issue.</li>
+                            <li>If there is no sound on the file and it does <em>not</em> look like there should be sound (e.g. only contains GVs or other Visual Events, but no one is talking on screen), then log all the Visual Events that are required. If there are no Visual Events, then the script has <strong>Nothing to Transcribe</strong></li>
+                            <li>When there is no relevant dialogue and there are no Visual Events, the script is uploaded as <strong>Nothing to Transcribe</strong>.</li>
+                          </ul>
+                          <p><font color="red"><strong>IMPORTANT:</strong></font> Despite the media file appearing to have nothing to transcribe, the entire media file should still be watched. A minimum charge will be paid for the job, even if there is nothing to transcribe.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab-Timecode" style="padding-bottom: 40px;">
+            <h3 class="cathead">Timecode</h3>
+            <p>Any job specs that relate specifically to timecodes can be found in this section.</p>
+            <div class="catcards">
+              
+              <div class="card" id="si-Timecode-NoBITC?" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-NoBITC" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>No BITC?</span>
+                  </a>
+                </h5>
+                <div id="si-NoBITC" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>If a file has no BITC, and the software does not calibrate automatically, then calibrate to 00:00:00:00 at the start of a media.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                  <div class="troubleshootingopen">
+                    <h5 style="padding-top: 30px;" class="troubleshootingheader">Troubleshooting tips:</h5>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <tr>
+                        <th class="troubleshooting" width="180px">Problem</th>
+                        <th class="troubleshooting">Solution</th>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">What is timecode?</td>
+                        <td class="troubleshooting">Timecode consists of 8 numbers separated by colons, and represents hours, minutes, second and frames. For example:<ul><li><font color="red">05:</font>00:23:21 - the figure in red represents hours</li><ul><li>05:<font color="red">00:</font>23:21 - the figure in red represents minutes</li><ul><li>05:00:<font color="red">23:</font>21 - the figure in red represents seconds</li><ul><li>05:00:23:<font color="red">21</font> - the figure in red represents frames</li></ul>As the media plays, the timecode runs like a clock. It keeps track of when things are said and helps the editor put the programme together. Our job is to put timecodes into our script. This is done by stamping a new timecode into our transcript every time the interviewer asks a question and every time the interviewee answers it.</ul></ul></ul></td>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">Why is timecode calibrated?</td>
+                        <td class="troubleshooting">Each media file will have its own unique timecode. It is vital that every media file is accurately calibrated. A script with incorrect timecode is useless to our clients, which means it is useless to us.</p><p>Fortunately, the software was designed to make the task of timecoding very straightforward and easy.</p><p>Some media files calibrate automatically, meaning that they do not need to be manually calibrated.</p><p>Some media files require the user to tell the software what the timecode value is for the media that is being worked on.</p><p>Some media files do not calibrate automatically, nor do they have timecode onscreen, so specific instructions for that job should be followed to calibrate the media file.</p></td>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">When is timecode calibrated?</td>
+                        <td class="troubleshooting">If a media file does not calibrate automatically, it should be calibrated upon opening the media file. The timecode should stay in sync, meaning that calibration is only required once. However, if the timecode gets out of sync, then see the timecode drift and timecode jump troubleshooting tips. </td>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">How is timecode calibrated?</td>
+                        <td class="troubleshooting">The software should prompt timecode calibration when a media file is opened. If the timecode needs to be recalibrated, then <strong>Recut/Offset</strong> can be found under the <strong>Timecode</strong> menu. When calibrating timecode, the software should choose the correct Video Format e.g. PAL or NTSC.</td>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">There is no BITC on the media file (Pre-Edit)</td>
+                        <td class="troubleshooting">When there is no BITC, and the timecode has not calibrated automatically, the timecode is calibrated to 00:00:00:00 at the start of a media file.</td>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">The BITC is illegible</td>
+                        <td class="troubleshooting">If the BITC is illegible, then try the following troubleshooting tips:<ul><li>Resizing the media file window may improve the legibility of a timecode.</li><li>Skipping through the media file frame by frame may help locate a legible timecode.</li><li>It is usually easy to see when a timecode ticks over into what is logically the next timecode, for example: 09:59:59:23 ticking over to 10:00:00:00 is an obvious change both visually and logically.</li></ul>If troubleshooting fails, contact Vitac to report the issue, and stop the transcription.</td>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">How to amend a timecode in the script</td>
+                        <td class="troubleshooting">If a timecode in your script is wrong, it can be replaced with ease. Line up the media file to the correct timecode, then in the dialogue/visual event, click the 'set to current time' button. This will update the timecode with the timecode on the media player.</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="si-Timecode-Pauseindialogue" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Pauseindialogue" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Pause in dialogue</span>
+                  </a>
+                </h5>
+                <div id="si-Pauseindialogue" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>If a speaker pauses and the pause lasts <strong>3-5 seconds</strong>, the pause is illustrated with an ellipsis...</p>
+                          <p>If the pause is greater than <strong>5 seconds</strong>, then dialogue is continued with a new timecode stamp and a fresh character label.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Timecode-Timecodeaccuracyforaudioevents" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Timecodeaccuracyforaudioevents" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Timecode accuracy for audio events</span>
+                  </a>
+                </h5>
+                <div id="si-Timecodeaccuracyforaudioevents" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>Timecodes do not need to be absolutely <em>on the nose</em> accurate. As long as they are accurate to within one second the client will be satisfied. It is important <strong>not</strong> to waste time trying to get the frames correct. </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                  <div class="troubleshootingopen">
+                    <h5 style="padding-top: 30px;" class="troubleshootingheader">Troubleshooting tips:</h5>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <tr>
+                        <th class="troubleshooting" width="180px">Problem</th>
+                        <th class="troubleshooting">Solution</th>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">How to deal with timecode that drifts out of sync</td>
+                        <td class="troubleshooting">If the timecode gets out of sync, the timecode must be recalibrated. Tips for working with drifting timecode:<ul><li>Contacting Vitac to report the issue may result in a new media file being available that does not drift out of sync. Whilst waiting for a response, transcription is resumed, but the timecode is recalibrated when it drifts out of sync.</li><li>It is easy to test how much a timecode will drift out of sync: by calibrating to the start of the file, then viewing the last frame of the media file, it is possible to see how much the file drifts out of sync. This should help identify how often the media file will need to be recalibrated to stay in sync.</li></ul></td>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">How to amend a timecode in the script</td>
+                        <td class="troubleshooting">If a timecode in your script is wrong, it can be replaced with ease. Line up the media file to the correct timecode, then in the dialogue/visual event, click the 'set to current time' button. This will update the timecode with the timecode on the media player.</td>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">Dealing with jumping timecode</td>
+                        <td class="troubleshooting">Some media files have timecode 'jumps'. When a camera is turned off and then on again, the timecode may appear to 'jump' forward, this is because the camera man is using what we call <em>time of day timecode</em>. When the timecode 'jumps' the software's calibration will get out of sync, recalibrating will resolve this issue. IMPORTANT: when recalibrating, the software will only be in sync with the section that has just been calibrated. Returning to earlier or later sections of the media file may result in being out of sync again, just recalibrate when necessary. </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="si-Timecode-Timecodesaroundcamerashotchanges" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Timecodesaroundcamerashotchanges" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Timecodes around camera shot changes</span>
+                  </a>
+                </h5>
+                <div id="si-Timecodesaroundcamerashotchanges" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>If the camera shot changes, it is likely due to the camera operator turning their camera off and on. It could also be because the client has put a few tapes together to be transcribed as a single tape. It is important that when there is a shot change, the following steps are taken:</p>
+                          <ul>
+                            <li>Look out for timecode jumps (you will need to re-calibrate every time a timecode jumps). If there are jumping timecodes in the file and there are no instructions on this job about jumping timecodes, you must alert Vitac to this issue.</li>
+                            <li>Do not continue in the same content block if the speaker in the previous shot is the same as the speaker in the next shot. Instead, start a new timecoded content block.</li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab-Audio" style="padding-bottom: 40px;">
+            <h3 class="cathead">Audio</h3>
+            <p>Any job specs that relate specifically to the audio can be found in this section.</p>
+            <div class="catcards">
+              
+              <div class="card" id="si-Audio-Chatter" primarysort="2" secondarysort="Marker:_Background">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-Chatter" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Background</span>
+                    <span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [CH</span>
+                    <span>CHATTER</span>
+                  </a>
+                </h5>
+                <div id="si-Chatter" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>Idle, or trivial chatter.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>Chatter&#160;is irrelevant&#160;dialogue between the interviewer and interviewee that doesn't need to be transcribed. Examples of chatter often occur at the beginning of interviews when the interviewer may be preparing the interviewee for the up and coming questions, ensuring he/she is comfortable, settling them in and easing their nerves&#160;etc. Of course chatter can occur at any point throughout the media, so please use your discretion.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                  <div class="troubleshootingopen">
+                    <h5 style="padding-top: 30px;" class="troubleshootingheader">Troubleshooting tips:</h5>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <tr>
+                        <th class="troubleshooting" width="180px">Problem</th>
+                        <th class="troubleshooting">Solution</th>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">Chatter or relevant dialogue?</td>
+                        <td class="troubleshooting">Is the interview just starting? Often the beginning of the interview will have chatter. The interviewer may be preparing the interviewee for the up and coming questions, ensuring he/she is comfortable, ensuring that the film crew is happy with the set up etc. It could be any number of things, but the important thing is this type of dialogue is chatter.<p>Sometimes the interviewer prompts or grooms the interviewee for an answer. Most interviews are Q&amp;As but sometimes within these interviews the interviewer may be looking for a specific answer to a question. In these cases they may suggest how to answer. Discretion should be used here - a lot of this type of dialogue can be treated as chatter. When the interviewer asks a direction question, or the interviewer begins answering, it is back to relevant dialogue.</p><p>Throw-away comments should be considered as relevant dialogue, not chatter.</p></td>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">Grouping irrelevant dialogue markers</td>
+                        <td class="troubleshooting">There should only ever be one chatter event (be it CHATTER, CREW CHATTER or CREW DIRECTION) between the last bit of relevant dialogue typed and the continuation of new relevant dialogue. Prioritise in this order:<ul><li>If there is any CREW DIRECTION in amongst CHATTER and CREW CHATTER then log the whole event as CREW DIRECTION.</li><li>If there is any CREW CHATTER amongst normal CHATTER, then log the whole event as CREW CHATTER.</li><li>All the rest is CHATTER</li></ul>Irrelevant dialogue should always be just one marker, following the priority listing above.</td>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">Irrelevant dialogue during GV</td>
+                        <td class="troubleshooting">When dealing with actuality there will often be General Views (GVs) of certain locations pertinent to the programme being filmed. Whilst filming, the film crew may be talking about what they did last night, how they feel, who scored in the football, or suggestions for changing the location of filming / type of shot. This type of dialogue is ignored, instead a CREW CHATTER marker is used.</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-ClapsHands" primarysort="2" secondarysort="Marker:_Background">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-ClapsHands" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Background</span>
+                    <span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [CL</span>
+                    <span>CLAPS HANDS</span>
+                  </a>
+                </h5>
+                <div id="si-ClapsHands" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>Claps Hands</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>The sound produced when the palms of someone's hands are clapped together with force. If a clapping hand can be heard during relevant dialogue it needs logging.</p>
+                        </td>
+                      </tr>
+                      
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-CrewChatter" primarysort="2" secondarysort="Marker:_Background">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-CrewChatter" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Background</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [CC</span>
+                    <span>CREW CHATTER</span>
+                  </a>
+                </h5>
+                <div id="si-CrewChatter" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>Crew Chatter</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>Crew chatter&#160;is irrelevant&#160;dialogue between the film crew and interviewer. Our client doesn't want to know what the cameraman had for lunch, or what the soundman thought of the latest blockbuster. They just want to know what the interviewee is saying.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                  <div class="troubleshootingopen">
+                    <h5 style="padding-top: 30px;" class="troubleshootingheader">Troubleshooting tips:</h5>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <tr>
+                        <th class="troubleshooting" width="180px">Problem</th>
+                        <th class="troubleshooting">Solution</th>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">Crew chatter or relevant dialogue?</td>
+                        <td class="troubleshooting">A member of the film crew may talk, but should it be transcribed as relevant dialogue?  <ul><li>When the crew talk amongst themselves, it is treated as crew chatter.</li><li>When a crew member talks to the interviewer, it is treated as crew chatter.</li><li>If a crew member asks the interviewee a question, it is transcribed as relevant dialogue. However, the crew member should be added to the clipboard and the dialogue should be assigned with the Interviewer speaker role.</li></ul></td>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">Grouping irrelevant dialogue markers</td>
+                        <td class="troubleshooting">There should only ever be one chatter event (be it CHATTER, CREW CHATTER or CREW DIRECTION) between the last bit of relevant dialogue typed and the continuation of new relevant dialogue. Prioritise in this order:<ul><li>If there is any CREW DIRECTION in amongst CHATTER and CREW CHATTER then log the whole event as CREW DIRECTION.</li><li>If there is any CREW CHATTER amongst normal CHATTER, then log the whole event as CREW CHATTER.</li><li>All the rest is CHATTER</li></ul>Irrelevant dialogue should always be just one marker, following the priority listing above.</td>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">Irrelevant dialogue during GV</td>
+                        <td class="troubleshooting">When dealing with actuality there will often be General Views (GVs) of certain locations pertinent to the programme being filmed. Whilst filming, the film crew may be talking about what they did last night, how they feel, who scored in the football, or suggestions for changing the location of filming / type of shot. This type of dialogue is ignored, instead a CREW CHATTER marker is used.</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-CrewDirection" primarysort="2" secondarysort="Marker:_Background">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-CrewDirection" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Background</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [CD</span>
+                    <span>CREW DIRECTION</span>
+                  </a>
+                </h5>
+                <div id="si-CrewDirection" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>Direction given by a&#160;member of&#160;the film crew to the&#160;interviewee/s&#160;to do this, do that, or say the other.&#160;</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>Direction given by a&#160;member of&#160;the film crew to the&#160;interviewee/s&#160;to do this, do that, or say the other. The interviewer may be looking for a specific answer to a question and in some cases may suggest how the interviewee should&#160;answer. However, as soon as the interviewer asks a direction question, or as soon as the interviewee begins answering, you are back to relevant dialogue.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                  <div class="troubleshootingopen">
+                    <h5 style="padding-top: 30px;" class="troubleshootingheader">Troubleshooting tips:</h5>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <tr>
+                        <th class="troubleshooting" width="180px">Problem</th>
+                        <th class="troubleshooting">Solution</th>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">Crew direction or relevant dialogue?</td>
+                        <td class="troubleshooting">The crew or the interviewer may give the interviewee directions that affect what they do or how they say something. This is recognised as crew direction. For example: If the interviewer asks the interviewee to stop looking at the camera, it is crew direction. If the interviewer starts explaining that the interviewee's answer must include the question, then it is crew direction.</td>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">Grouping irrelevant dialogue markers</td>
+                        <td class="troubleshooting">There should only ever be one chatter event (be it CHATTER, CREW CHATTER or CREW DIRECTION) between the last bit of relevant dialogue typed and the continuation of new relevant dialogue. Prioritise in this order:<ul><li>If there is any CREW DIRECTION in amongst CHATTER and CREW CHATTER then log the whole event as CREW DIRECTION.</li><li>If there is any CREW CHATTER amongst normal CHATTER, then log the whole event as CREW CHATTER.</li><li>All the rest is CHATTER</li></ul>Irrelevant dialogue should always be just one marker, following the priority listing above.</td>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">Irrelevant dialogue during GV</td>
+                        <td class="troubleshooting">When dealing with actuality there will often be General Views (GVs) of certain locations pertinent to the programme being filmed. Whilst filming, the film crew may be talking about what they did last night, how they feel, who scored in the football, or suggestions for changing the location of filming / type of shot. This type of dialogue is ignored, instead a CREW CHATTER marker is used.</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-DoorSlamming" primarysort="2" secondarysort="Marker:_Background">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-DoorSlamming" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Background</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [DO</span>
+                    <span>DOOR SLAMMING</span>
+                  </a>
+                </h5>
+                <div id="si-DoorSlamming" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>A slamming door.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>The noise from a door slamming shut during relevant dialogue spoken.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Interruption" primarysort="2" secondarysort="Marker:_Background">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-Interruption" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Background</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [INT</span>
+                    <span>INTERRUPTION</span>
+                  </a>
+                </h5>
+                <div id="si-Interruption" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>Dialogue in which the person currently speaking is interrupted by another person's dialogue.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>Dialogue in which the person currently speaking is interrupted by another person's dialogue. For example:</p>
+                          <p>1. A single word affirmation muttered by the interviewer as the interviewee talks</p>
+                          <p>2. The interviewer briefly interrupts what the interviewee is saying with dialogue that doesn't need transcribing.&#160;</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Laughter" primarysort="2" secondarysort="Marker:_Background">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-Laughter" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Background</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [LAU</span>
+                    <span>LAUGHTER</span>
+                  </a>
+                </h5>
+                <div id="si-Laughter" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>There is laughter in the background.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>When there is laughter in the background, but it is not from the current speaker. Instead it is interrupting or occuring during the current speaker's dialogue and therefore needs to be logged.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Noise" primarysort="2" secondarysort="Marker:_Background">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-Noise" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Background</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [NO</span>
+                    <span>NOISE</span>
+                  </a>
+                </h5>
+                <div id="si-Noise" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>Any generic background noise.</td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>Any generic background noise that could interrupt relevant dialogue.</td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-VoicesInBackground" primarysort="2" secondarysort="Marker:_Background">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-VoicesInBackground" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Background</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [VO</span>
+                    <span>VOICES IN BACKGROUND</span>
+                  </a>
+                </h5>
+                <div id="si-VoicesInBackground" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>Any voice/s heard in the media background.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>Voice/s heard in the media background during the speaking of relevant dialogue.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-ForeignDialogue" primarysort="2" secondarysort="Marker:_Delivery">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-ForeignDialogue" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Delivery</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [FD</span>
+                    <span>FOREIGN DIALOGUE</span>
+                  </a>
+                </h5>
+                <div id="si-ForeignDialogue" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>Foreign dialogue.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>Any dialogue in the media that you cannot understand because it's not in your native tongue.&#160;</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                  <div class="troubleshootingopen">
+                    <h5 style="padding-top: 30px;" class="troubleshootingheader">Troubleshooting tips:</h5>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <tr>
+                        <th class="troubleshooting" width="180px">Problem</th>
+                        <th class="troubleshooting">Solution</th>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">Common foreign phrases</td>
+                        <td class="troubleshooting">Foreign dialogue is usually represented with a marker. However, if a foreign word is a common phrase, then it is transcribed. For example, <em>bonjour</em>, <em>bon voyage</em>, and <em>por favor</em> would be transcribed, whereas <em>&#191;C&#243;mo se dice maybe en Espa&#241;ol?</em> would be represented with a marker. <p>The only rule is that the spelling must be correct. If unsure of spelling, or the spelling needs research, then it should not be transcribed and should be represented with a marker instead.</p></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-TalkingOverEachOther" primarysort="2" secondarysort="Marker:_Delivery">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-TalkingOverEachOther" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Delivery</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [TA</span>
+                    <span>TALKING OVER EACH OTHER</span>
+                  </a>
+                </h5>
+                <div id="si-TalkingOverEachOther" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>More than one person talking at the same time.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>Where dialogue overlaps and it's hard to identify what's being said and by whom.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Inaudible" primarysort="2" secondarysort="Marker:_Unknown">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-Inaudible" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Unknown</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [IN</span>
+                    <span>INAUDIBLE</span>
+                  </a>
+                </h5>
+                <div id="si-Inaudible" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>A word spoken that can't be clearly heard because of sound issues, interference or poor audio.&#160;</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>Any word spoken during relevant dialogue that cannot be clearly heard and understood. This may be because of poor audio or a loud background noise. Please note: if you have multiple instances of inaudibles that stop the resulting sentence making sense (for example "I [INAUDIBLE] was [INAUDIBLE] park and [INAUDIBLE] seaside [INAUDIBLE] car with [INAUDIBLE]") then simply label it all&#160;within one instance of [INAUDIBLE].</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                  <div class="troubleshootingopen">
+                    <h5 style="padding-top: 30px;" class="troubleshootingheader">Troubleshooting tips:</h5>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <tr>
+                        <th class="troubleshooting" width="180px">Problem</th>
+                        <th class="troubleshooting">Solution</th>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">The audio is poor</td>
+                        <td class="troubleshooting">The following steps may improve the quality of the sound:<ul><li>We do <strong>not</strong> recommend headsets, earphone and in-ear headphones as they tend to produce lower quality audio and can be uncomfortable to wear over long periods. We recommend using a pair of <strong>over-ear headphones</strong> which should produce good quality audio and be comfortable over extended use.</li><li>Some media files are difficult because of background noise, due to the nature of the file, there sometimes is very little that can be done to improve the audio. Do the best you can with this type of material.</li><li>If the audio sounds 'broken' and the poor audio quality cannot be attributed to background noise, then contact Vitac to report the issue, and a new file will be requested from the client.</li></ul> </td>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">Multiple words or whole sentence is inaudible</td>
+                        <td class="troubleshooting">When a whole sentence, or a collection of words are inaudible, it is still logged with a single inaudible marker.<p>Sentences that have been broken up by multiple inaudibles and no longer make sense are excluded. Instead, the sentence is marked as inaudible.</p></td>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">The speaker has a strong accent</td>
+                        <td class="troubleshooting">Accents are a normal part of transcription and as such, dealing with them is part of the job. However, if the accent is so strong that it is going to slow down transcription considerably, contact Vitac and a decision will be made on how best to proceed. </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Phonetic" primarysort="2" secondarysort="Marker:_Unknown">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-Phonetic" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Unknown</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [PH</span>
+                    <span>PHONETIC</span>
+                  </a>
+                </h5>
+                <div id="si-Phonetic" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>A phonetic attempt at a word in the absence of knowing how to spell it.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>A phonetic attempt at a word in the absence of knowing how to spell it.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                  <div class="troubleshootingopen">
+                    <h5 style="padding-top: 30px;" class="troubleshootingheader">Troubleshooting tips:</h5>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <tr>
+                        <th class="troubleshooting" width="180px">Problem</th>
+                        <th class="troubleshooting">Solution</th>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">Phonetic spellings allowed</td>
+                        <td class="troubleshooting">Whan a spelling is not known (even after research), or the audio is poor enough to prevent a word from being heard correctly, then you can try to spell the word phonetically. The phonetic marker can be used, within which an attempt at typing the word phonetically can be made. </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-SpecialistTerminology" primarysort="2" secondarysort="Marker:_Unknown">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-SpecialistTerminology" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Unknown</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [SP</span>
+                    <span>SPECIALIST TERMINOLOGY</span>
+                  </a>
+                </h5>
+                <div id="si-SpecialistTerminology" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>Specialist words or phrases that are specific to a particular subject.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>Specialist words or phrases in the media specific to a particular subject that can't be identified or transcribed because of insufficient knowledge.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-UnsureOfName" primarysort="2" secondarysort="Marker:_Unknown">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-UnsureOfName" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Unknown</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [UN</span>
+                    <span>UNSURE OF NAME</span>
+                  </a>
+                </h5>
+                <div id="si-UnsureOfName" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>Any reference to a&#160;person's name in relevant dialogue that you're unsure of.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>Any reference to a&#160;person's name in relevant dialogue&#160;that you're unsure of.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                  <div class="troubleshootingopen">
+                    <h5 style="padding-top: 30px;" class="troubleshootingheader">Troubleshooting tips:</h5>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <tr>
+                        <th class="troubleshooting" width="180px">Problem</th>
+                        <th class="troubleshooting">Solution</th>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">The speaker has a strong accent</td>
+                        <td class="troubleshooting">Accents are a normal part of transcription and as such, dealing with them is part of the job. However, if the accent is so strong that it is going to slow down transcription considerably, contact Vitac and a decision will be made on how best to proceed. </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-UnsureOfWord" primarysort="2" secondarysort="Marker:_Unknown">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-UnsureOfWord" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Unknown</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [UW</span>
+                    <span>UNSURE OF WORD</span>
+                  </a>
+                </h5>
+                <div id="si-UnsureOfWord" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>Any word in relevant dialogue that you can hear but you're unsure of.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>Any word in relevant dialogue that you can hear but you're unsure of.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                  <div class="troubleshootingopen">
+                    <h5 style="padding-top: 30px;" class="troubleshootingheader">Troubleshooting tips:</h5>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <tr>
+                        <th class="troubleshooting" width="180px">Problem</th>
+                        <th class="troubleshooting">Solution</th>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">The speaker has a strong accent</td>
+                        <td class="troubleshooting">Accents are a normal part of transcription and as such, dealing with them is part of the job. However, if the accent is so strong that it is going to slow down transcription considerably, contact Vitac and a decision will be made on how best to proceed. </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-BreathesHeavily" primarysort="2" secondarysort="Marker:_Utterance">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-BreathesHeavily" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Utterance</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [BR</span>
+                    <span>BREATHES HEAVILY</span>
+                  </a>
+                </h5>
+                <div id="si-BreathesHeavily" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>The speaker is breathing heavily.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>This differs from panting in that a person is taking heavy breaths instead of quick breaths. Heavy breaths are deep breaths, not shallow.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Burps" primarysort="2" secondarysort="Marker:_Utterance">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-Burps" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Utterance</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [BU</span>
+                    <span>BURPS</span>
+                  </a>
+                </h5>
+                <div id="si-Burps" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>To expel gas loudly or rudely from the stomach through the mouth.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>The current speaker burps, causing a pause in their dialogue.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-ClearsThroat" primarysort="2" secondarysort="Marker:_Utterance">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-ClearsThroat" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Utterance</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [CT</span>
+                    <span>CLEARS THROAT</span>
+                  </a>
+                </h5>
+                <div id="si-ClearsThroat" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>The act of clearing the throat.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>The current speaker clears their throat, causing a pause in their dialogue.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Coughs" primarysort="2" secondarysort="Marker:_Utterance">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-Coughs" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Utterance</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [CO</span>
+                    <span>COUGHS</span>
+                  </a>
+                </h5>
+                <div id="si-Coughs" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>To push air from the lungs in a quick, noisy explosion.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>The current speaker coughs, causing a pause in their dialogue.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Cries" primarysort="2" secondarysort="Marker:_Utterance">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-Cries" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Utterance</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [CR</span>
+                    <span>CRIES</span>
+                  </a>
+                </h5>
+                <div id="si-Cries" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>Shedding tears; to weep, or to utter loudly.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>The current speaker cries, either because of emotional distress, or cries out in anger, frustration, or surprise. Their cry may cause dialogue to pause, or they may be speaking whilst crying. Either way, it needs logging.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Gasps" primarysort="2" secondarysort="Marker:_Utterance">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-Gasps" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Utterance</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [GA</span>
+                    <span>GASPS</span>
+                  </a>
+                </h5>
+                <div id="si-Gasps" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>To catch one's breath with an open mouth, owing to pain or astonishment.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>The current speaker inhales sharply, perhaps in shock, pain, astonishment, or being out of breath.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Grunts" primarysort="2" secondarysort="Marker:_Utterance">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-Grunts" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Utterance</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [GR</span>
+                    <span>GRUNTS</span>
+                  </a>
+                </h5>
+                <div id="si-Grunts" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>The speaker makes a grunting noise.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>Someone makes a low, guttural sound. This is usually because of anger or pain, and sometimes because of an annoyance.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Gulps" primarysort="2" secondarysort="Marker:_Utterance">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-Gulps" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Utterance</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [GU</span>
+                    <span>GULPS</span>
+                  </a>
+                </h5>
+                <div id="si-Gulps" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>To swallow quickly or in large mouthfuls, often audibly.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>The current speaker gulps. This could be to swallow food or drink, but may also be a hammy way to show that the speaker is scared.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Hums" primarysort="2" secondarysort="Marker:_Utterance">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-Hums" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Utterance</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [HU</span>
+                    <span>HUMS</span>
+                  </a>
+                </h5>
+                <div id="si-Hums" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>The speaker is humming.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>Humming to sing with the lips closed and without uttering speech sounds distinctly.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Laughs" primarysort="2" secondarysort="Marker:_Utterance">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-Laughs" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Utterance</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [LA</span>
+                    <span>LAUGHS</span>
+                  </a>
+                </h5>
+                <div id="si-Laughs" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>An expression of mirth particular to the human species; the sound heard in laughing.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>A person can be heard laughing.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Moans" primarysort="2" secondarysort="Marker:_Utterance">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-Moans" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Utterance</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [MO</span>
+                    <span>MOANS</span>
+                  </a>
+                </h5>
+                <div id="si-Moans" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>The speaker makes a moaning noise.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>A speaker makes a moaning noise to express physical or mental suffering. Note that some moaning can also be to indicate pleasure.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Pants" primarysort="2" secondarysort="Marker:_Utterance">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-Pants" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Utterance</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [PA</span>
+                    <span>PANTS</span>
+                  </a>
+                </h5>
+                <div id="si-Pants" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>The speaker is panting to catch their breath.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>A speaker is panting. They are breathing with short, quick breaths. This might be due to fear, or extraneous exercise.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Screams" primarysort="2" secondarysort="Marker:_Utterance">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-Screams" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Utterance</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [SC</span>
+                    <span>SCREAMS</span>
+                  </a>
+                </h5>
+                <div id="si-Screams" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>To utter a loud, sharp, piercing sound.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>The current speaker releases a loud sharp, piercing sound, perhaps in joy, fear, shock or sadness.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Sighs" primarysort="2" secondarysort="Marker:_Utterance">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-Sighs" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Utterance</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [SI</span>
+                    <span>SIGHS</span>
+                  </a>
+                </h5>
+                <div id="si-Sighs" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>Someone expelling air from their lungs in a laboured manner.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>The current speaker releases a large breath of air, but labours the point of doing so. Perhaps they are bored? Perhaps they are emphasising that they are not interested in what is being said? Perhaps they are reminiscing over a past event with fondness?</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Sips" primarysort="2" secondarysort="Marker:_Utterance">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-Sips" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Utterance</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [SIP</span>
+                    <span>SIPS</span>
+                  </a>
+                </h5>
+                <div id="si-Sips" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>The speaker makes an audible sipping noise whilst drinking.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>Somone takes a sip from a drink, but makes an audible sipping noise. People often sip when drinking a hot drink.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Sniffs" primarysort="2" secondarysort="Marker:_Utterance">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-Sniffs" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Utterance</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [SN</span>
+                    <span>SNIFFS</span>
+                  </a>
+                </h5>
+                <div id="si-Sniffs" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>A sharp inhale through the nose, usually to express contempt, to detect a smell, or to stop it running (although we'd all prefer it if they just blew their nose!)</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>The current speaker sniffs, causing a pause in their dialogue. Or there is a deliberate sniff, either to smell something or show their disdain for something.</p>
+                          <p>If typing a finished programme, if someone sniffs without having any dialogue, consider whether it is plot pertinent, perhaps to communicate that the character has a cold. If it is, the marker should be added.</p>
+                          <p>If typing pre-edit material, include these whenever someone sniffs during their dialogue.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Sobs" primarysort="2" secondarysort="Marker:_Utterance">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-Sobs" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Utterance</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [SO</span>
+                    <span>SOBS</span>
+                  </a>
+                </h5>
+                <div id="si-Sobs" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>Shedding tears; to weep.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>The current speaker cries or sobs, either because of emotional distress, or cries out in anger, frustration, or surprise. The speaker is not sobbing whilst talking.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Stutters" primarysort="2" secondarysort="Marker:_Utterance">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-Stutters" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Utterance</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [ST</span>
+                    <span>STUTTERS</span>
+                  </a>
+                </h5>
+                <div id="si-Stutters" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>The speaker makes a stuttering noise, that is non-verbal, i.e. there are no real words in the stutter.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>Someone makes a repeating noise when attempting to speak.</p>
+                          <p>This marker is not used if the stutter actually forms a word (words should actually be typed). Instead, this marker is used to indicate that the speaker makes a stuttering sound, but the noise made is not a word.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Tuts" primarysort="2" secondarysort="Marker:_Utterance">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-Tuts" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Utterance</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [TU</span>
+                    <span>TUTS</span>
+                  </a>
+                </h5>
+                <div id="si-Tuts" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>An exclamation (used to express annoyance or frustration), noun (an exclamation of annoyance or frustration) or verb (make an exclamation of annoyance or frustration).</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>An exclamation made by the current speaker, or another speaker during relevant dialogue.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Whistles" primarysort="2" secondarysort="Marker:_Utterance">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-Whistles" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Utterance</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [WH</span>
+                    <span>WHISTLES</span>
+                  </a>
+                </h5>
+                <div id="si-Whistles" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>The speaker makes a whistling noise.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>Someone emits a clear, high-pitched sound by forcing breath through a small hole between their lips or teeth.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Yawns" primarysort="2" secondarysort="Marker:_Utterance">
+                <h5 class="alert alert-primary">
+                  <a data-toggle="collapse" data-target="#si-Yawns" href="javascript:void(0);">
+                    <span class="badge role-icon badge-primary">Marker: Utterance</span>
+					<span class="badge role-icon badge-secondary"style="margin-right:10px;">Short Form: [YA</span>
+                    <span>YAWNS</span>
+                  </a>
+                </h5>
+                <div id="si-Yawns" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>To open the mouth widely and take a long, rather deep breath, often because one is tired.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>When the current speaker yawns during the speaking of relevant dialogue.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Interviewer" primarysort="2" secondarysort="Speaker_Role">
+                <h5 class="alert alert-warning">
+                  <a data-toggle="collapse" data-target="#si-Interviewer" href="javascript:void(0);">
+                    <span class="badge role-icon badge-warning">Speaker Role</span>
+                    <span>Interviewer</span>
+                  </a>
+                </h5>
+                <div id="si-Interviewer" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>A formal interviewer</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>Simply asking a question does make a speaker an interviewer. However, if somebody is purposefully playing a role of an interviewer they will attempt to extract relevant dialogue from a speaker in order to drive an interview forwards. They are steering the conversation in the direction of the TV show's purpose.</p>
+                          <p>For example: If a final programme is going to be about chocolate, then the interviewer will ask questions about chocolate to lead the speaker into talking about chocolate.</p>
+                          <p>It should be easy to identity an interviewer as they often take control of the footage that is being recorded. However, you will often find that an interviewer is off camera. This is because the interviewer's dialogue is usually edited out of the final show.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Speaker" primarysort="2" secondarysort="Speaker_Role">
+                <h5 class="alert alert-warning">
+                  <a data-toggle="collapse" data-target="#si-Speaker" href="javascript:void(0);">
+                    <span class="badge role-icon badge-warning">Speaker Role</span>
+                    <span>Speaker</span>
+                  </a>
+                </h5>
+                <div id="si-Speaker" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>Speaker is a normal speaker. The speaker fulfils no other role defined in the speaker role list available in this job.</td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>If the speaker currently talking does not fulfil any other role presented in the Speaker Role list then they are a speaker.</td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Audioqualityispoor" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Audioqualityispoor" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Audio quality is poor</span>
+                  </a>
+                </h5>
+                <div id="si-Audioqualityispoor" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>If the audio quality is poor, resulting in excessive inaudible markers and potentially causing dialogue to be transcribed incorrectly, it is extremely important that you contact Vitac to report the issue. The client will then be notified as they may be able to supply a replacement media file with better audio. Failure to flag poor audio to a client may result in a client complaint.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Backgroundmarkersarelogged" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Backgroundmarkersarelogged" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Background markers are logged</span>
+                  </a>
+                </h5>
+                <div id="si-Backgroundmarkersarelogged" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>If there is a background noise during someone's dialogue, it should be logged with an appropriate 'background' marker.</p>
+                          <p>Background markers are noises made in the background. Most clients will want to know about the noises so they can try to edit the sound out from the audio.</p>
+                          <p>If the noise is constant throughout the file, try to log the marker just once and indicate that it is continuous.</p>
+                          <p>The short form autocorrects list will provide some common background markers, but this list is not exhaustive. The nature of this type of work means that anything could happen in the background, so add your own custom markers where necessary.</p>
+                          <p>Examples of background markers:</p>
+                          <ul><li> [DOOR SLAMS] </li> <li> [PASSING CAR] </li> <li> [GUNSHOT] </li> <li> [DOG BARKS] </li> </ul>
+                          <p>Generally speaking, background markers should be in the 'Simple present' tense (words that end with 's' and do not end in 'ing', like door slams, phone rings, and passing car). </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Excludeunder-dialogue" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Excludeunder-dialogue" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Exclude under-dialogue</span>
+                  </a>
+                </h5>
+                <div id="si-Excludeunder-dialogue" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>If there are multiple speakers talking at the same time, always transcribe the dominant speaker and ignore background voices. If both speakers are 'dominant' - such as two speakers are being interviewed at the same time, and they are tripping over each other's sentences - then all audible dialogue is transcribed.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Groupingchatter" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Groupingchatter" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Grouping chatter</span>
+                  </a>
+                </h5>
+                <div id="si-Groupingchatter" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>There should only ever be one chatter event (be it chatter, crew chatter or crew direction) between the last bit of relevant dialogue typed and the continuation of new relevant dialogue. Chatter markers are prioritised in this order: </p>
+                          <ol>
+                            <li>If there is any crew direction in amongst chatter and crew chatter then whole event is logged as crew direction.</li>
+                            <li>If there is any crew chatter amongst normal chatter, then whole event is logged as crew chatter.</li>
+                            <li>All the rest is chatter.</li>
+                          </ol>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Interruptionsbytheinterviewer" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Interruptionsbytheinterviewer" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Interruptions by the interviewer</span>
+                  </a>
+                </h5>
+                <div id="si-Interruptionsbytheinterviewer" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>Single word affirmations muttered by the interviewer as the interviewee talks are logged as [INTERRUPTION]. Also, if the interviewer briefly interrupts what the interviewee is saying it is logged as [INTERRUPTION]. If the interviewer's interruption is sustained, then the dialogue is logged under a new timecode and interviewer speaker label.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Interruptionsbythespeaker" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Interruptionsbythespeaker" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Interruptions by the speaker</span>
+                  </a>
+                </h5>
+                <div id="si-Interruptionsbythespeaker" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>Most single-word affirmations muttered by the interviewee as the interviewer talks are ignored. For example, if the interviewee constantly say's "yeah", "sure", etc. whilst the interviewer talks - these are ignored.</p>
+                          <p>If the interviewee very briefly interrupts what the interviewer is saying, but the dialogue adds nothing to the conversation and isn't a direct answer to the question being asked, then it is ignored</p>
+                          <p>However, if the interviewee's interruption is sustained, then their dialogue needs to be logged under a new timecode, splitting the dialogue it is interrupting.</p>
+                          <p>However, when an interviewee is actually providing an answer to the question, it must be transcribed, even if the response is just a single word. For example, the interviewer asks <em>do you like the colour red?</em> and the interviewee replies <em>Yes</em>, then it is transcribed.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Namingspeakers" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Namingspeakers" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Naming speakers</span>
+                  </a>
+                </h5>
+                <div id="si-Namingspeakers" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <h5 class="mb-1">If a source script or source material has been provided:</h5>
+                          <p>If a source script has been provided, or you have been provided a cast sheet, always use the names provided in the source material for your speaker labels.</p>
+                          <h5 class="mb-1">No source material is available, try the credits:</h5>
+                          <p>If no source material is available, but there are credits at the end of the programme, then check to see if the character's name is included in the credits. If so, use this name in the speaker label.</p>
+                          <h5 class="mb-1">No credits:</h5>
+                          <p>If no source material or credits are available, use a speaker's full name in the speaker label if it is available. When a full name is not available, an appropriate circumstantial speaker name is used. Below is a list of naming conventions in order of priority:</p>
+                          <ol>
+                            <li>Full name, E.g. Jane Doe</li>
+                            <li>Forename or Surname only E.g. Jane, or Doe</li>
+                            <li>Nickname, E.g. Jay</li>
+                            <li>Occupation and/or physical description of person using hair colour, description of clothes, facial hair and gender. E.g. Female dentist, face mask and brown hair</li>
+                            <li>Appropriate circumstantial name based on gender and location. E.g. Female audience member</li>
+                            <li>If you are unable to use any of the above name formats, then please only use their gender followed by a unique number. For example: Female 1</li>
+							</ol>
+							<p/>
+							<h5 class="mb-1">Unsure of spelling:</h5>
+							<p>If you are unsure if the spelling of a speaker is accurate e.g. you are unsure if the spelling is Steven or Stephen, then please add [UNSURE] after the speakers name in the Speaker Name list.</p>
+                            <div class="alert alert-info" role="alert">Remember, if you are transcribing a fictional piece, use the actor's <strong>character</strong> name, rather than their real name.</div>
+                            <p/>
+                            <div class="alert alert-danger" role="alert"><strong>IMPORTANT:</strong> Unless you are using a name found in source material or credits, it is never acceptable to use any pejorative / sensitive terms when describing speakers. We do not refer to weight or race when describing speakers. There are no excuses for this. Use sensible and contextual descriptions only. </div>
+                          
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                  <div class="troubleshootingopen">
+                    <h5 style="padding-top: 30px;" class="troubleshootingheader">Troubleshooting tips:</h5>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <tr>
+                        <th class="troubleshooting" width="180px">Problem</th>
+                        <th class="troubleshooting">Solution</th>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">Unknown speaker labels</td>
+                        <td class="troubleshooting"><p>When a speaker name is unknown, check for Job Notes, Item Notes and the name of the job, as it may provide relevant speaker names or a face sheet. Note that the file name may have the speaker name buried inside the file name, for example: AA11AA_TOM_Take22 - in this instance the speaker's name is TOM.</p><p>Furthermore, the speaker name may be provided in the dialogue. If no speaker name is available, a placeholder name must be used instead.</p><p>Below is a list of naming conventions in order of priority:</p><ul><li>1. Full name</li><li>2. Forename or Surname only</li><li>3. Nickname</li><li>4. Occupation and/or physical description of person using hair colour, description of clothes, facial hair and gender. E.g. Male dentist with moustache and brown hair</li><li>5. Appropriate circumstantial name based on gender and location. E.g. female audience member</li><li>6. If the speaker is offscreen and circumstantial information is not available, their speaker name should be gender followed by a unique number. E.g. Male 1</li></ul>If the speaker's name is discovered later in the script, the speaker clipboard needs to be updated with the correct name.<p><font color="red">WARNING:</font> It is never acceptable to use racial or potentially offensive terms when providing descriptions.</p></td>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">Downloading and using face sheets</td>
+                        <td class="troubleshooting">If a face sheet is available it can downloaded from the Job Item Notes section of the Job Slip. Clicking on a link for a face sheet should download a .zip file of which a face sheet can be extracted from. </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Profanitiestranscribedasspoken" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Profanitiestranscribedasspoken" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Profanities transcribed as spoken</span>
+                  </a>
+                </h5>
+                <div id="si-Profanitiestranscribedasspoken" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>Swearing is not censored. Whatever comes out of their mouth goes down in the script.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                  <div class="troubleshootingopen">
+                    <h5 style="padding-top: 30px;" class="troubleshootingheader">Troubleshooting tips:</h5>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <tr>
+                        <th class="troubleshooting" width="180px">Problem</th>
+                        <th class="troubleshooting">Solution</th>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">Type profanity as normal</td>
+                        <td class="troubleshooting">When a profanity is spoken, it is typed as it is said, with no censoring.</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Throw-awaycomments" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Throw-awaycomments" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Throw-away comments</span>
+                  </a>
+                </h5>
+                <div id="si-Throw-awaycomments" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>Throw-away comments are transcribed. More often than not, it's the throw-away comments that prove the most sought after soundbites.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Unheardwordcountismorethan10?" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Unheardwordcountismorethan10" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Unheard word count is more than 10?</span>
+                  </a>
+                </h5>
+                <div id="si-Unheardwordcountismorethan10" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>When uploading a script, include a message in the notes if there are ten or more markers of the 'unknown' type. For example, if there are any illegibles, unsure of word, specialist terminology, unsure of name markers etc., then upload with a note to this effect.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                  <div class="troubleshootingopen">
+                    <h5 style="padding-top: 30px;" class="troubleshootingheader">Troubleshooting tips:</h5>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <tr>
+                        <th class="troubleshooting" width="180px">Problem</th>
+                        <th class="troubleshooting">Solution</th>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">The audio is poor</td>
+                        <td class="troubleshooting">The following steps may improve the quality of the sound:<ul><li>We do <strong>not</strong> recommend headsets, earphone and in-ear headphones as they tend to produce lower quality audio and can be uncomfortable to wear over long periods. We recommend using a pair of <strong>over-ear headphones</strong> which should produce good quality audio and be comfortable over extended use.</li><li>Some media files are difficult because of background noise, due to the nature of the file, there sometimes is very little that can be done to improve the audio. Do the best you can with this type of material.</li><li>If the audio sounds 'broken' and the poor audio quality cannot be attributed to background noise, then contact Vitac to report the issue, and a new file will be requested from the client.</li></ul> </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Unknownmarkersarelogged" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Unknownmarkersarelogged" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Unknown markers are logged</span>
+                  </a>
+                </h5>
+                <div id="si-Unknownmarkersarelogged" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>In a scenario where it has not been possible to identify the word(s) being transcribed, it should be substituted by an unknown marker.</p>
+                          <p>A common example of an 'unknown' marker is the inaudible marker: It has been identified that there is dialogue, but it cannot be heard. Instead of ignoring the dialogue, an inaudible marker is used.</p>
+                          <p>With some 'unknown' marker types, you will need to add an attempt, providing an educated guess of the word(s). Markers with an attempt make it more efficient to QC a script, and also allow us to communicate areas of concern to the client.</p>
+                          <p>Always use the suggested 'unknown' marker types where possible. If none of them apply, a custom 'unknown' marker can be used. Remember: the purpose is to communicate that something would ordinarily be included in this script, but it has not been possible to identify and type the words with confidence.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Audio-Utterancemarkersarelogged" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Utterancemarkersarelogged" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Utterance markers are logged</span>
+                  </a>
+                </h5>
+                <div id="si-Utterancemarkersarelogged" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>All utterances are logged with an appropriate marker. Utterances are non-dialogue noises made by a speaker's mouth. All instances of utterances must be logged, even if they do not occur alongside dialogue.</p>
+                          <p>Examples of utterances: </p>
+                          <ul><li>Screams</li> <li>Laughs</li> <li>Sobs</li> <li>Grunts</li> </ul>
+                          <p>Utterances should be in the 'Simple present' tense (words that end with a 's', like shouts). </p>
+                          <p><strong>REMEMBER:</strong> Utterances should not be confused with Delivery markers. Utterance = a non-word mouth noise made by someone, Delivery = <em>how</em> the dialogue was said, e.g. whispering or screaming.</p>
+                          <p>As a general rule, utterance markers should be put in the same content row as the speaker that made the noise.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab-Visual" style="padding-bottom: 40px;">
+            <h3 class="cathead">Visual</h3>
+            <p>Any job specs that relate specifically to the visuals can be found in this section.</p>
+            <div class="catcards">
+              <div class="card" id="si-Visual-Description" primarysort="2" secondarysort="Content_Label">
+                <h5 class="alert alert-warning">
+                  <a data-toggle="collapse" data-target="#si-Description" href="javascript:void(0);">
+                    <span class="badge role-icon badge-warning">Content Label</span>
+                    <span>Describe</span>
+                  </a>
+                </h5>
+                <div id="si-Description" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>Some content blocks require a description.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>If a content block requires a description, it will prompt the user to provide a description.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Visual-EndOfMedia" primarysort="2" secondarysort="Content_Label">
+                <h5 class="alert alert-warning">
+                  <a data-toggle="collapse" data-target="#si-EndOfMedia" href="javascript:void(0);">
+                    <span class="badge role-icon badge-warning">Content Label</span>
+                    <span>End of Media</span>
+                  </a>
+                </h5>
+                <div id="si-EndOfMedia" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>The end of the media file</td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>The media file has been played its entire duration. Check the running time in the bottom corner of the media player to confirm that the entire media file has been played.</td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Visual-GeneralView" primarysort="2" secondarysort="Content_Label">
+                <h5 class="alert alert-warning">
+                  <a data-toggle="collapse" data-target="#si-GeneralView" href="javascript:void(0);">
+                    <span class="badge role-icon badge-warning">Content Label</span>
+                    <span>GV</span>
+                  </a>
+                </h5>
+                <div id="si-GeneralView" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <th class="" width="180px">Description</th>
+                        <td>
+                          <p>GV refers to general view, and as its name suggests, is a generic shot of anything seen on screen.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="">How To Identify</th>
+                        <td>
+                          <p>Any shot that doesn't contain an interview. For example, after an interview the film crew may get some shots of the person they've just interviewed in and around their office. Or the film crew may decide to get a romantic sunset shot. It could be any number of things where the film crew are getting what the industry terms as a cutaway</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab-Grammar&amp;Punctuation" style="padding-bottom: 40px;">
+            <h3 class="cathead">Grammar &amp; Punctuation</h3>
+            <p>Any style job specs related to standard practises regarding grammar and punctuation</p>
+            <div class="catcards">
+              
+              <div class="card" id="si-Grammar&amp;Punctuation-Abbreviations" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Abbreviations" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Abbreviations</span>
+                  </a>
+                </h5>
+                <div id="si-Abbreviations" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>Abbreviations remove the start or end of a word, unlike contractions which remove the middle of a word. For example:</p>
+                          <p><em>The Right Honourable</em> can be shortened to <em>Rt Hon.</em></p>
+                          <p>Rt is a contraction of Right as the middle is removed. Hon. is abbreviated as the end of the word is removed.</p>
+                          <p>You are not required to use full stops to indicate that letters are missing when typing abbreviations, just be sure that you are consistent with this. For example:</p>
+                          <ul>
+                            <li>PHD is an abbreviation of Philosophiae Doctor</li>
+                            <li>Stat is an abbreviation of statim (immediately)</li>
+                            <li>Conj is an abbreviation of conjunction</li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Accents" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Accents" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Accents</span>
+                  </a>
+                </h5>
+                <div id="si-Accents" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>Accents are a normal part of transcription and as such, dealing with them is part of the job. If you are substantially slowed down by strong / foreign accents then contact Vitac and a decision will be made on how best to proceed.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                  <div class="troubleshootingopen">
+                    <h5 style="padding-top: 30px;" class="troubleshootingheader">Troubleshooting tips:</h5>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <tr>
+                        <th class="troubleshooting" width="180px">Problem</th>
+                        <th class="troubleshooting">Solution</th>
+                      </tr>
+                      <tr>
+                        <td class="troubleshooting">The speaker has a strong accent</td>
+                        <td class="troubleshooting">Accents are a normal part of transcription and as such, dealing with them is part of the job. However, if the accent is so strong that it is going to slow down transcription considerably, contact Vitac and a decision will be made on how best to proceed. </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Acronyms" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Acronyms" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Acronyms</span>
+                  </a>
+                </h5>
+                <div id="si-Acronyms" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>An acronym is a word formed from the first letters of each word in a phrase. For example:</p>
+                          <ul>
+                            <li>Frequently asked questions is FAQ</li>
+                            <li>Digital Versatile Disc is DVD</li>
+                            <li>United States of America is USA</li>
+                          </ul>
+                          <p>Acronyms are written in uppercase.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Apostrophes" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Apostrophes" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Apostrophes</span>
+                  </a>
+                </h5>
+                <div id="si-Apostrophes" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>Apostrophes are used to show that something belongs to someone or something else. For example:</p>
+                          <ul>
+                            <li>Alice's coat (the coat belonging to Alice)</li>
+                            <li>Jack's friend (the friend belonging to Jack)</li>
+                            <li>The BBC's website (The website that belongs to the BBC)</li>
+                          </ul>
+                          <p>Add an apostrophe and an s ('s) to singular nouns and plural nouns that don't end in s, such as children and people. For example:</p>
+                          <ul>
+                            <li>the dog's dinner</li>
+                            <li>the children's play area</li>
+                          </ul>
+                          <p>Just add an apostrophe to plural nouns that already end in s. For example:</p>
+                          <ul>
+                            <li>ladies' room</li>
+                            <li>parents' evening</li>
+                          </ul>
+                          <p><em>Never</em> use an apostrophe to indicate a plural. This also applies to initials, abbreviations and numbers. For example:</p>
+                          <ul>
+                            <li>DVDs</li>
+                            <li>1990s</li>
+                          </ul>
+                          <p>An apostrophe is used in contractions to indicate that something is missing. For example:</p>
+                          <ul>
+                            <li>That DVD is rubbish becomes That DVD's rubbish</li>
+                            <li>Cannot becomes can't</li>
+                            <li>because becomes 'cause</li>
+                          </ul>
+                          <p>It's should only be written to shorten it is or it has. When it's is being used as a pronoun (like his or her) it never takes an apostrophe.</p>
+                          <ul>
+                            <li><strong>Correct:</strong> Never judge a book by its cover.</li>
+                            <li><strong>Incorrect:</strong> Never judge a book by it's cover.</li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Capitalletters" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Capitalletters" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Capital letters</span>
+                  </a>
+                </h5>
+                <div id="si-Capitalletters" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>New sentences begin with a capital letter. Very self explanatory. The only exception is when a sentence starts with a brand name that purposefully has a lowercase first letter. For example, 'iPhone sales are better this year'.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Colloquialisms" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Colloquialisms" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Colloquialisms</span>
+                  </a>
+                </h5>
+                <div id="si-Colloquialisms" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>A colloquialism is a word, phrase or other form used in informal language. Often, the spoken word is informal and therefore contains colloquialisms. Please transcribe relevant dialogue even when it is colloquial.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Colonsandsemi-colons" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Colonsandsemi-colons" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Colons and semi-colons</span>
+                  </a>
+                </h5>
+                <div id="si-Colonsandsemi-colons" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>The most common use of the colon is to inform the reader that what follows the colon proves, explains, defines, describes, or lists elements of what preceded it.</p>
+                          <p>The semicolon is a punctuation mark that separates major sentence elements. A semicolon can be used between two closely related independent clauses, provided they are not already joined by a coordinating conjunction. Semicolons can also be used in place of commas to separate items in a list, particularly when the elements of that list contain commas.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Commas" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Commas" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Commas</span>
+                  </a>
+                </h5>
+                <div id="si-Commas" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>Following the normal rules and conventions when using commas, they should be used to reflect the rhythm and meaning of the spoken word. Also, in our transcripts commas are normally used after well, but, because, 'cause, like, etc. Commas are also used to surround utterances such as you know, like, uh, um, mmm, etc.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Contractions" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Contractions" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Contractions</span>
+                  </a>
+                </h5>
+                <div id="si-Contractions" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td><p>A contraction is a shortened version of the written and spoken forms of a word, syllable, or word group created by omission of internal letters. Apostrophes are used to show that you have missed some letters out. For example:</p><ul><li>cannot becomes can't</li><li>are not becomes aren't</li><li>it is or it has becomes it's</li><li>we are becomes we're</li></ul>Remember, insert the apostrophe in the exact place you have omitted letters.</td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Copyrightedmaterial" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Copyrightedmaterial" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Copyrighted material</span>
+                  </a>
+                </h5>
+                <div id="si-Copyrightedmaterial" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>Films, songs, books, pieces of art, or anything that is copyrighted are capitalised. For example:</p>
+                          <ul>
+                            <li>Star Wars</li>
+                            <li>Hot Shots! Part Deux</li>
+                            <li>The BFG</li>
+                            <li>Waterloo</li>
+                            <li>Terminator 2</li>
+                            <li>WALL-E</li>
+                            <p>If the word/s are normally capitalised in unusual ways, then follow the unusual way. For example, iPod capitalises the P.</p>
+                          </ul>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Currencyandmoneytypednumerically" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Currencyandmoneytypednumerically" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Currency and money typed numerically</span>
+                  </a>
+                </h5>
+                <div id="si-Currencyandmoneytypednumerically" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>Money is typed as signs and numerals and not words. Type &#163;5 instead of 5 pounds. Furthermore 250k or 250 grand are all acceptable if that is what the person said.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Dashes" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Dashes" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Dashes</span>
+                  </a>
+                </h5>
+                <div id="si-Dashes" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>Dashes are used to denote a break in a sentence or to set off parenthetical statements. For example:</p>
+                          <ul>
+                            <li>A flock of sparrows &#8211; some of them juveniles &#8211; alighted and sang.</li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Datesandtimestypedasspoken" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Datesandtimestypedasspoken" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Dates and times typed as spoken</span>
+                  </a>
+                </h5>
+                <div id="si-Datesandtimestypedasspoken" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>Dates are typed how they were spoken, using numbers where possible, even if the number is 10 or lower. Examples:</p>
+                          <ul>
+                            <li>1st January 1972.</li>
+                            <li>May 3rd 1988.</li>
+                            <li>5th of the 1st 2015.</li>
+                          </ul>
+                          <p>Times are typed as spoken, using numbers where possible, even if the number is 10 or lower. Examples:</p>
+                          <ul>
+                            <li>I'll meet you at 9:45 p.m.</li>
+                            <li>See you at quarter past.</li>
+                            <li>It's midnight.</li>
+                            <li>See you at 6:00.</li>
+                            <li>It's 3:00 in the morning, call me later!</li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Diacritics" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Diacritics" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Diacritics</span>
+                  </a>
+                </h5>
+                <div id="si-Diacritics" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>A diacritic is a glyph added to a letter. The main use of diacritical marks in the Latin script is to change the sound-value of the letter to which they are added. For example: I&#241;t&#235;rn&#226;ti&#244;n&#224;liz&#230;ti&#248;n is full of diacritics.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-DoubleHyphens" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-DoubleHyphens" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Double Hyphens</span>
+                  </a>
+                </h5>
+                <div id="si-DoubleHyphens" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>The double hyphen is used to indicate that a sentence was not completed. Usually this is when someone cuts their sentence short, trails off, or was interrupted by someone and never completed their sentence.</p>
+                          <p>The double hyphen is perfect to indicate that someone was interrupted by another speaker and that they never got to finish their sentence.</p>
+                          <p>It is also perfect for occasions when speakers stop themselves mid-sentence to change the conversation direction, or because they don't want to complete their sentence. It can also be used if false starts need to be transcribed and someone cuts the sentence short to start again.</p>
+                          <p>Never use the double hyphen if someone finishes their sentence, e.g. someone pauses before finishing their sentence, or if someone interrupts them, but they still finish their sentence.</p>
+                          <p>The double hyphen is always two hyphens. It is never one or three hyphens.</p>
+                          <p>A double hyphen should <strong>not</strong> be preceded by a space-- it should always come directly after the word it follows-- there should be no punctuation between the word and the double hyphens.</p>
+                          <p style="background-color:MediumSeaGreen; color:white;">Good (Speaker interrupts themselves):<br/>"I'm seeing Jack tomorrow to-- Oh, I just remembered that you-- I have to tell him I can't see him."</p>
+                          <p style="background-color:tomato; color:white;">Bad (Speaker is only pausing, they still finish their sentence):<br/>"I'm seeing Jack tomorrow to-- tell him-- I can't see him anymore."</p>
+                          <p style="background-color:MediumSeaGreen; color:white;">Good (Speaker is cut off by another speaker):<br/>"I'm seeing Jack tomorrow to--"<br/>"I told you not to see him."<br/>"Okay, I won't."</p>
+                          <p style="background-color:tomato; color:white;">Bad (space before the hyphens):<br/>"I'm seeing Jack tomorrow to --"<br/>"I told you not to see him."<br/>"Okay, I won't."</p>
+                          <p style="background-color:tomato; color:white;">Bad (punctuation before the hyphens):<br/>"I'm seeing Jack tomorrow to,--"<br/>"I told you not to see him."<br/>"Okay, I won't."</p>
+                          <p style="background-color:tomato; color:white;">Bad (incorrect number of hyphens):<br/>"I'm seeing Jack tomorrow to-"<br/>"I told you not to see him."<br/>"Okay, I won't."</p>
+                          <p style="background-color:tomato; color:white;">Bad (the speaker got to finish their sentence):<br/>"I'm seeing Jack tomorrow to--"<br/>"I told you not to see him."<br/>"...tell him that I won't see him again."</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Ellipsis" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Ellipsis" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Ellipsis</span>
+                  </a>
+                </h5>
+                <div id="si-Ellipsis" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>The ellipsis is used to indicate a mid-sentence pause, or when a sentence needs to be split between two content blocks because of an interruption.</p>
+                          <p>The ellipsis is not used to indicate that a sentence has finished mid-sentence when someone trails off. Instead, the double hyphen is used.</p>
+                          <p>The ellipsis is three dots. It is never two or four dots.</p>
+                          <p>An ellipsis should <strong>not</strong> be preceded by a space... it should always come directly after the word it follows...</p>
+                          <p style="background-color:MediumSeaGreen; color:white;">Good:<br/>"I'm seeing Jack tomorrow to..."<br/>"I told you not to see him."<br/>"...tell him that I won't see him again."</p>
+                          <p style="background-color:tomato; color:white;">Bad:<br/>"I'm seeing Jack tomorrow to ..."<br/>"I told you not to see him."<br/>" ..tell him that I won't see him again."</p>
+                          <p style="background-color:MediumSeaGreen; color:white;">Good:<br/>"On today's episode of Deadliest Catch..."<br/>"...we see some deadly waves."</p>
+                          <p style="background-color:tomato; color:white;">Bad:<br/>"On today's episode of Deadliest Catch .."<br/>"....we see some deadly waves."</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Exclamationmarks" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Exclamationmarks" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Exclamation marks</span>
+                  </a>
+                </h5>
+                <div id="si-Exclamationmarks" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>An exclamation mark is usually used after dialogue that is shouted. Exclamation marks should seldom be used.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Generalnumbers" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Generalnumbers" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>General numbers</span>
+                  </a>
+                </h5>
+                <div id="si-Generalnumbers" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>Excluding dates, measurements, weights and money, the numbers 0 - 10 are typed as words (zero to ten), and then 11+ as numerals. For example, the number 1 is typed as one, but the number 12 is typed as 12.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Hyphens" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Hyphens" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Hyphens</span>
+                  </a>
+                </h5>
+                <div id="si-Hyphens" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>Hyphens are often used to break single words into parts, or to join ordinarily separate words into single words. </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Measurements" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Measurements" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Measurements</span>
+                  </a>
+                </h5>
+                <div id="si-Measurements" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>Measurements are typed as signs and numerals, not words. For example: 5m instead of five metres.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Parenthesis" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Parenthesis" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Parenthesis</span>
+                  </a>
+                </h5>
+                <div id="si-Parenthesis" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>A parenthesis or parenthetical phrase is an explanatory or qualifying word, clause, or sentence inserted into a passage. The parenthesis could be left out and still form grammatically correct text. In general, do not use parenthesis.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Periods" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Periods" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Periods</span>
+                  </a>
+                </h5>
+                <div id="si-Periods" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>Periods or full stops represent the end of a sentence. A single space is always used after a full stop. For example:</p>
+                          <ul>
+                            <li>End of sentence. Start of new sentence.</li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Questionmarks" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Questionmarks" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Question marks</span>
+                  </a>
+                </h5>
+                <div id="si-Questionmarks" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>A question mark is always used if someone is asking a question. No exceptions.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Quotationmarks" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Quotationmarks" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Quotation marks</span>
+                  </a>
+                </h5>
+                <div id="si-Quotationmarks" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>If somebody delivers a famous quote in their dialogue, or the quote is specifically referred to in this following manner (for example): <em>I know, I told him quote, unquote, "There's no way it can be done,"</em> then quotation marks are used regardless of what script type you are producing. It can also be used when someone is reading their dialogue to indicate that they are quoting from the written words.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Slangwords" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Slangwords" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Slang words</span>
+                  </a>
+                </h5>
+                <div id="si-Slangwords" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>People often use slang when they speak, if the slang word is common, please transcribe it as it is. For example, slob, chill out, cool, lol are all slang words. Do not confuse accents with slang. For example, something should never be transcribed as somethink, even if that is what is said. Piano shouldn't be transcribed as piana.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Typegrammarexactlyasyouhearit" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Typegrammarexactlyasyouhearit" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Type grammar exactly as you hear it</span>
+                  </a>
+                </h5>
+                <div id="si-Typegrammarexactlyasyouhearit" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>If the person speaking uses bad grammar, type it exactly as they say it. The transcript must reflect the rhythm of the speaker. Long, long, long sentences with no commas or full-stops are <strong>not acceptable</strong>, and commas and full stops <strong>must</strong> be used where appropriate.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Typeslangcontractionsverbatim" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Typeslangcontractionsverbatim" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Type slang contractions verbatim</span>
+                  </a>
+                </h5>
+                <div id="si-Typeslangcontractionsverbatim" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td><p>People often remove letters from words to make new words. Sometimes these are not considered 'proper English', but are still understood by the masses. For example:</p><ul><li>because becomes 'cause (definitely not cos or coz)</li><li>want to becomes wanna</li><li>am not becomes ain't</li><li>you all becomes y'all</li><li>them becomes 'em</li></ul>Slang contractions are transcribed as they are said.<p>Do not confuse slang contractions with proper English contractions such as they'll, they're and I'll. Proper English contractions are covered in a separate job spec.</p></td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Usethecorrectspelling" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Usethecorrectspelling" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Use the correct spelling</span>
+                  </a>
+                </h5>
+                <div id="si-Usethecorrectspelling" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>Transcripts must have good spelling and grammar. Care must be taken not to confuse their, there and they're; let's and lets; who's and whose; to and too; it's and its.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="si-Grammar&amp;Punctuation-Weights" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Weights" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Weights</span>
+                  </a>
+                </h5>
+                <div id="si-Weights" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>Weights are typed as signs and numerals, not words. For example: 5g instead of five grams.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab-SupportMaterial" style="padding-bottom: 40px;">
+            <h3 class="cathead">Support Material</h3>
+            <p>Any job specs that relate specifically to support material can be found in this section.</p>
+            <div class="catcards">
+              <div class="card" id="si-SupportMaterial-Research" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Research" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Research</span>
+                  </a>
+                </h5>
+                <div id="si-Research" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>If the spelling of a name, word, phrase or specialist term is unsure, then it needs verifying with an internet search. </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                  </div>
+              <div class="card" id="si-SupportMaterial-Usingfacesheetsandsupportmaterial" primarysort="2" secondarysort="Style_Guide">
+                <h5 class="alert alert-success">
+                  <a data-toggle="collapse" data-target="#si-Usingfacesheetsandsupportmaterial" href="javascript:void(0);">
+                    <span class="badge role-icon badge-success">Style Guide</span>
+                    <span>Using face sheets and support material</span>
+                  </a>
+                </h5>
+                <div id="si-Usingfacesheetsandsupportmaterial" class="card-body card-normal collapse">
+                  <p>
+                    <table width="100%" cellpadding="2" class="table table-condensed table-bordered">
+                      <th colspan="2">Job Spec</th>
+                      <tr>
+                        <td>
+                          <p>If you have been provided support material, then ensure that it is used when transcribing the media file.</p>
+                          <p>Support material is provided to us by the client, it is not created by Vitac.</p>
+                          <p>Support material can come in many forms, but the most common type of support material provided for pre-edit jobs is the face sheet.</p>
+                          <p>If a face sheet has been provided, ensure that your script's speaker labels reflect the spellings of the names in the face sheet.</p>
+                          <p>Also, people often refer to other speakers in their dialogue. When this happens, make sure that use the correct spelling according to the face sheet. However, if someone refers to somebody by their nickname in the dialogue, but the source script only has their actual name, make sure you type what was actually said. Make an educated guess to the spelling of the nickname.</p>
+                          <p>If support material has been provided, the client expects it to be visible and referred to whilst typing the script. Consider opening the face sheet on a second screen or printing it out in order to fulfil this expectation. Mistakes found in a script that could have been avoided by referring to the support material will be perceived as negligent and inattentive by the client.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>$(document).ready(function () {$("#sidebar").mCustomScrollbar({ theme: "minimal" }); $('#sidebarCollapse').on('click', function () { $('#sidebar, #content').toggleClass('active'); $('.collapse.in').toggleClass('in'); $('a[aria-expanded=true]').attr('aria-expanded', 'false'); }); });</script>
+  </body>
+</html>
